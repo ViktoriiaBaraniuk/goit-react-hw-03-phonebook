@@ -1,0 +1,10 @@
+.filter {
+  margin-left: 10px;
+  border-radius: 2px;
+  outline: none;
+  border: 2px solid grey;
+}
+.filter:focus {
+  border-color: blue;
+  color: blue;
+}

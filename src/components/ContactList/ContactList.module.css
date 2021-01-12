@@ -1,0 +1,23 @@
+.list {
+  list-style: none;
+}
+.listItem {
+  display: flex;
+  align-items: baseline;
+}
+.listItem::before {
+  content: '📞';
+}
+
+.deleteBtn {
+  margin-left: 15px;
+  max-width: 65px;
+  height: 25px;
+  cursor: pointer;
+}
+.deleteBtn:hover {
+  background-color: rgb(209, 49, 49);
+}
+.itemName {
+  width: 200px;
+}
