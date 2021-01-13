@@ -1,5 +1,6 @@
 import { Component } from 'react';
 import shortid from 'shortid';
+import Container from './components/Container/Container';
 import Section from './components/Section/Section';
 import ContactForm from './components/ContactForm/ContactForm';
 import ContactList from './components/ContactList/ContactList';
@@ -68,7 +69,7 @@ class App extends Component {
     const visibleContacts = this.getVisibleContacts();
 
     return (
-      <>
+      <Container>
         <Section title="Phonebook">
           <ContactForm onSubmit={this.addContact} contacts={contacts} />
         </Section>
@@ -79,7 +80,7 @@ class App extends Component {
             onDeleteContact={this.deleteContact}
           />
         </Section>
-      </>
+      </Container>
     );
   }
 }

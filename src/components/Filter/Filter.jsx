@@ -3,7 +3,7 @@ import s from './Filter.module.css';
 
 function Filter({ value, onChange }) {
   return (
-    <label>
+    <label className={s.filterForm}>
       Find contacts by name
       <input
         type="text"
